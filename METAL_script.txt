@@ -14,8 +14,8 @@ MINMAXFREQ ON
 CUSTOMVARIABLE TotalSampleSize
 LABEL TotalSampleSize as N
 
-PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_women_only.fastGWA
-PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_men_only.fastGWA
+PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_female_only.fastGWA
+PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_male_only.fastGWA
 
 OUTFILE Fenland_trait_of_interest_MA .tbl
 ANALYZE HETEROGENEITY
