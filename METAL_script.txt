@@ -1,0 +1,23 @@
+SEPARATOR  TAB
+SCHEME STDERR
+
+MARKER  SNP
+ALLELE  A1 A2
+FREQ AF1
+EFFECT  BETA
+STDERR  SE
+PVALUE  P
+
+AVERAGEFREQ ON
+MINMAXFREQ ON
+
+CUSTOMVARIABLE TotalSampleSize
+LABEL TotalSampleSize as N
+
+PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_women_only.fastGWA
+PROCESS /insert_path/sex-specific-pGWAS/output/Fenland_trait_of_interest_men_only.fastGWA
+
+OUTFILE Fenland_trait_of_interest_MA .tbl
+ANALYZE HETEROGENEITY
+
+QUIT
